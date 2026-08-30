@@ -1,0 +1,81 @@
+body {
+    background: #ddeeff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px;
+}
+
+.container {
+    width: 380px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px gray;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.student-form {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+}
+
+.gender {
+    margin: 10px 0;
+}
+
+.gender input {
+    width: auto;
+    margin-right: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+button:hover {
+    background: darkgreen;
+}
+
+#output {
+    margin-top: 20px;
+    background: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#output h3 {
+    margin-top: 0;
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+    }
+}

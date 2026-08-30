@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Student Registration</h1>
+        <p>Enter your details below</p>
+
+        <form id="regForm" class="student-form" novalidate>
+            <input type="text" id="name" placeholder="Full Name" required>
+
+            <input type="email" id="email" placeholder="Email" required>
+
+            <input type="password" id="password" placeholder="Password" required>
+
+            <input type="text" id="mobile" placeholder="Mobile Number" required>
+
+            <input type="text" id="address" placeholder="Address" required>
+
+            <input type="text" id="city" placeholder="City" required>
+
+            <select id="course" required>
+                <option value="">Select Course</option>
+                <option>B.Tech CSE</option>
+                <option>B.Tech AI</option>
+                <option>BCA</option>
+                <option>MCA</option>
+            </select>
+
+            <div class="gender">
+                <label><input type="radio" name="gender" value="Male" checked> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <div id="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
